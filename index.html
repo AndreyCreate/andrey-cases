@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Андрей Андреев — кейсы: AI-агенты в производстве контента</title>
+<meta name="description" content="Вертикальные видео, автоматизация, карусели, рост и доход в Instagram, результаты участниц. Цифры из статистики и записей экрана.">
+<meta property="og:title" content="Андрей Андреев — кейсы">
+<meta property="og:description" content="Как AI-агенты ускоряют производство контента: рилсы, автоматизация, карусели, рост в Instagram.">
+<meta property="og:image" content="img/top_posts.jpg">
+<style>
+@font-face{font-family:Inter;src:url(fonts/Inter-400.ttf) format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:Inter;src:url(fonts/Inter-500.ttf) format("truetype");font-weight:500;font-display:swap}
+@font-face{font-family:"JetBrains Mono";src:url(fonts/JetBrainsMono.ttf) format("truetype");font-weight:100 800;font-display:swap}
+:root{--bg:#fff;--blue:#BFDDFB;--blue-deep:#2F80ED;--coral:#E8563F;--ink:#111;--ink-2:#3A3A3A;--mute:#6B6B6B;--line:#E6E6E6;--gray:#F5F5F5;--dark:#2B2B2B}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;line-height:1.5;font-size:17px}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:12.5px;letter-spacing:.01em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.u{text-decoration:underline;text-decoration-color:var(--blue-deep);text-decoration-thickness:2px;text-underline-offset:.14em}
+/* nav */
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0}
+.nav-l{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-l img{width:40px;height:40px;border-radius:50%;object-fit:cover}
+.nav-l span{line-height:1.25;font-size:14px}
+.nav-l small{display:block;color:var(--mute);font-family:"JetBrains Mono",monospace;font-size:11.5px}
+.pill{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 22px;border-radius:999px;text-decoration:none;font-family:"JetBrains Mono",monospace;font-size:14px;font-weight:500;white-space:nowrap}
+.pill-coral{background:var(--coral);color:#fff}
+.pill-gray{background:var(--gray);color:var(--ink)}
+.pill:focus-visible,.shelf-link:focus-visible{outline:3px solid var(--blue-deep);outline-offset:3px}
+/* hero */
+.hero{padding:22px 0 44px}
+.kick{color:var(--mute);display:flex;gap:8px;align-items:center;margin-bottom:16px}
+.kick .star{color:var(--coral);font-size:14px}
+.h1{font-size:clamp(36px,8.4vw,76px);line-height:1.02;letter-spacing:-.045em;font-weight:500;max-width:980px}
+.lead{margin-top:20px;font-size:clamp(17px,2.2vw,20px);line-height:1.5;color:var(--ink-2);max-width:700px}
+.lead .dots{font-family:"JetBrains Mono",monospace;color:var(--blue-deep);margin-right:6px}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:28px;max-width:860px}
+.chip{background:var(--gray);border-radius:16px;padding:14px 16px}
+.chip:nth-child(2),.chip:nth-child(3){background:var(--blue)}
+.chip b{display:block;font-size:clamp(26px,6vw,38px);font-weight:500;letter-spacing:-.04em;line-height:1.05}
+.chip span{display:block;margin-top:6px;font-size:14px;line-height:1.35;color:var(--ink-2)}
+.shelves{margin-top:30px;display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.shelf-link{display:grid;grid-template-columns:34px 1fr auto;gap:8px;align-items:center;padding:14px 2px;border-bottom:1px solid var(--line);text-decoration:none;font-size:17px}
+.shelf-link .n{font-family:"JetBrains Mono",monospace;font-size:12.5px;color:var(--blue-deep)}
+.shelf-link .c{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--mute)}
+/* sections */
+.sec{padding:52px 0 20px;border-top:1px solid var(--line)}
+.sec-gray{background:var(--gray);border-top:0;padding-bottom:40px}
+.h2{font-size:clamp(30px,6.4vw,54px);line-height:1.06;letter-spacing:-.035em;font-weight:500;max-width:900px}
+.sec .lead{margin-top:14px}
+.case{margin-top:40px;display:grid;grid-template-columns:1fr;gap:20px;align-items:start}
+.case + .case{padding-top:40px;border-top:1px solid var(--line)}
+.sec-gray .case + .case{border-color:#dedede}
+.case .num{font-family:"JetBrains Mono",monospace;font-size:12.5px;color:var(--blue-deep)}
+.case h3{margin-top:8px;font-size:clamp(23px,4.6vw,32px);line-height:1.15;letter-spacing:-.02em;font-weight:500}
+.case p{margin-top:12px;color:var(--ink-2)}
+.q{margin-top:16px;font-size:18px;line-height:1.45;padding-left:16px;border-left:3px solid var(--coral)}
+.q cite{display:block;margin-top:8px;font-style:normal;font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--mute)}
+.src{margin-top:14px;font-family:"JetBrains Mono",monospace;font-size:11.5px;color:var(--mute);line-height:1.5}
+.src:before{content:"источник :: ";color:var(--blue-deep)}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.st{background:var(--blue);border-radius:16px;padding:14px 16px}
+.st:nth-child(2n){background:var(--gray)}
+.sec-gray .st:nth-child(2n){background:#fff}
+.st b{display:block;font-size:clamp(24px,5.4vw,34px);font-weight:500;letter-spacing:-.04em;line-height:1.05}
+.st span{display:block;margin-top:6px;font-size:13.5px;line-height:1.35;color:var(--ink-2)}
+.st .was{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--mute);text-decoration:line-through;text-decoration-color:var(--coral)}
+.st.wide{grid-column:1/-1}
+.media{display:flex;flex-direction:column;gap:10px}
+.frame{border-radius:16px;overflow:hidden;background:#1c1c1c;box-shadow:0 14px 36px rgba(0,0,0,.12)}
+.frame.light{background:#fff;border:1px solid var(--line);box-shadow:none}
+.frame video,.frame img{width:100%;height:auto}
+.vert{max-width:340px;width:100%}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cap{color:var(--mute);font-size:13.5px;line-height:1.45}
+.note{margin-top:36px;background:var(--dark);color:#fff;border-radius:18px;padding:22px 22px}
+.note .mono{color:rgba(255,255,255,.6)}
+.note p{margin-top:8px;color:rgba(255,255,255,.88)}
+.mini{display:grid;grid-template-columns:1fr;gap:10px;margin-top:40px}
+.mini > div{border:1px solid var(--line);border-radius:16px;padding:18px}
+.sec-gray .mini > div{background:#fff;border-color:#fff}
+.mini h4{font-size:19px;font-weight:500;letter-spacing:-.01em;line-height:1.25}
+.mini p{margin-top:8px;color:var(--ink-2);font-size:15.5px}
+.person{display:flex;align-items:center;gap:8px;margin-top:6px;font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--mute)}
+/* format */
+.format{padding:56px 0 64px;border-top:1px solid var(--line)}
+.steps{list-style:none;margin-top:22px;border-top:1px solid var(--line);counter-reset:s;max-width:760px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:40px 1fr;gap:8px;padding:14px 0;border-bottom:1px solid var(--line);color:var(--ink-2)}
+.steps li:before{content:"0" counter(s);font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--blue-deep);padding-top:3px}
+.cta{margin-top:30px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+footer{padding:26px 0 40px;border-top:1px solid var(--line);color:var(--mute)}
+footer .wrap{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+footer img{width:32px;height:32px;border-radius:50%}
+@media (min-width:760px){
+ .wrap{padding:0 40px}
+ .chips{grid-template-columns:repeat(4,1fr)}
+ .case{grid-template-columns:1fr 1fr;gap:48px}
+ .case.flip .media{order:-1}
+ .stats{grid-template-columns:1fr 1fr}
+ .mini{grid-template-columns:1fr 1fr}
+ .sec{padding-top:80px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+ <nav class="nav">
+  <a class="nav-l" href="#top"><img src="img/andrey.jpg" alt="Андрей Андреев" width="40" height="40"><span>Андрей Андреев<small>@andreyandreev.me</small></span></a>
+  <a class="pill pill-gray" href="https://t.me/andrey_andreev">Telegram</a>
+ </nav>
+
+ <header class="hero" id="top">
+  <div class="kick mono"><span class="star">✳︎</span> кейсы · сентябрь 2026</div>
+  <h1 class="h1">Как AI-агенты <span class="u">ускоряют</span> производство контента</h1>
+  <p class="lead"><span class="dots">::</span>Собрал всё подряд и разложил по полкам: вертикальные видео, автоматизация, карусели, рост и деньги в Instagram, результаты участниц моей группы. Цифры взяты из статистики Instagram, записей моего экрана и сообщений, которые присылали сами участницы. Где цифры нет, я её не пишу.</p>
+  <div class="chips">
+   <div class="chip"><b>34 мин</b><span>от десяти сырых видео до готового рилса</span></div>
+   <div class="chip"><b>3 мин</b><span>карусель, собранная голосом</span></div>
+   <div class="chip"><b>0 ₽</b><span>подрядчикам на ботов, презентации и дизайн постов</span></div>
+   <div class="chip"><b>17,6 млн</b><span>просмотров моих постов за январь–июль 2026</span></div>
+  </div>
+  <div class="shelves">
+   <a class="shelf-link" href="#video"><span class="n">01</span><span>Вертикальные видео</span><span class="c">5 кейсов</span></a>
+   <a class="shelf-link" href="#auto"><span class="n">02</span><span>Автоматизация</span><span class="c">5 кейсов</span></a>
+   <a class="shelf-link" href="#carousel"><span class="n">03</span><span>Карусели</span><span class="c">5 кейсов</span></a>
+   <a class="shelf-link" href="#growth"><span class="n">04</span><span>Рост и доход в Instagram</span><span class="c">2 кейса</span></a>
+   <a class="shelf-link" href="#mbga"><span class="n">05</span><span>Участницы группы Make Blog Great Again</span><span class="c">5 кейсов</span></a>
+  </div>
+ </header>
+</div>
+
+<!-- 01 VIDEO -->
+<section class="sec" id="video">
+ <div class="wrap">
+  <div class="kick mono"><span class="star">✳︎</span> 01 · вертикальные видео</div>
+  <h2 class="h2">Я снимаю на телефон. <span class="u">Монтирует</span> агент</h2>
+  <p class="lead"><span class="dots">::</span>Нарезка, паузы, субтитры, графика, музыка. Всё общение с агентом идёт в Telegram: я отправляю видео, говорю «Ок» или диктую правку.</p>
+
+  <article class="case">
+   <div>
+    <div class="num">кейс 1.1 · 13 сентября</div>
+    <h3>Десять сырых видео — готовый рилс через 34 минуты</h3>
+    <p>В 11:44 я отправил агенту десять видео, снятых по дороге: восемь селфи с улицы, из троллейбуса, автобуса и кафе и две записи экрана. В 11:57 он прислал план монтажа, я ответил «Ок». Первая версия пришла в 12:18. Я дал одну правку, и около 12:45 ролик уже был в ленте.</p>
+    <div class="stats">
+     <div class="st"><span class="was">3000 ₽ монтажёру</span><b>0 ₽</b><span>теперь входит в подписку Claude</span></div>
+     <div class="st"><b>1 правка</b><span>моё участие целиком: снял, отправил, «Ок», одна правка</span></div>
+    </div>
+    <div class="src">моя переписка с агентом 13.09 · пост в Instagram о монтаже</div>
+   </div>
+   <div class="media">
+    <div class="pair">
+     <div class="frame"><video src="v/montage_src.mp4" poster="v/montage_src.jpg" autoplay muted loop playsinline preload="metadata"></video></div>
+     <div class="frame light"><img src="img/montage_chat.jpg" alt="Переписка с агентом в Telegram: исходники, план, первая версия, правка" loading="lazy" width="900" height="1126"></div>
+    </div>
+    <div class="cap">Слева исходники, из которых собран ролик. Справа та самая переписка с агентом.</div>
+   </div>
+  </article>
+
+  <article class="case flip">
+   <div>
+    <div class="num">кейс 1.2 · 19–23 сентября</div>
+    <h3>Из видео зала, где прыгает очередь, — только мои прыжки</h3>
+    <p>Скинул агенту файлом запись тренировки по гимнастике. В кадре очередь человек из десяти, прыгают все. Агент сузил её до двух похожих людей и спросил, кто из них я. Дальше сам вырезал только мои прыжки, добавил музыку и плёночные переходы.</p>
+    <div class="stats">
+     <div class="st wide"><b>30 минут</b><span>от сырого видео до готового рилса</span></div>
+    </div>
+    <div class="src">переписка в Telegram 19.09 · рилс 23.09 (его тоже смонтировал агент)</div>
+   </div>
+   <div class="media">
+    <div class="frame vert"><video src="v/gym.mp4" poster="v/gym.jpg" controls playsinline preload="none"></video></div>
+    <div class="cap">Рилс про этот монтаж. Вставки — настоящие сообщения из чата.</div>
+   </div>
+  </article>
+
+  <article class="case">
+   <div>
+    <div class="num">кейс 1.3 · 23 августа</div>
+    <h3>Рилс из готового поста за 34 минуты</h3>
+    <p>Попросил агента сделать рилс из последнего поста. В 19:16 задача, в 19:50 готовое видео. В подписи к этому рилсу я так и написал: «Я не открывал ни CapCut, ни Figma».</p>
+    <div class="stats">
+     <div class="st"><b>18 000</b><span>просмотров</span></div>
+     <div class="st"><b>655</b><span>сохранений</span></div>
+     <div class="st wide"><b>234</b><span>репоста</span></div>
+    </div>
+    <div class="src">статистика Instagram · рилс от 23.08.2026</div>
+   </div>
+   <div class="media">
+    <div class="frame vert"><video src="v/reel234.mp4" poster="v/reel234.jpg" controls playsinline preload="none"></video></div>
+   </div>
+  </article>
+
+  <article class="case flip">
+   <div>
+    <div class="num">кейс 1.4</div>
+    <h3>Правки голосом: 10 минут вместо переписки с монтажёром</h3>
+    <p>Раньше я записывал правки дизайнеру, она переделывала и присылала обратно. Сейчас надиктовываю агенту, что вырезать и что поменять, и он перемонтирует сам. На записи видно время: 17:17 правки, 17:27 готовый ролик.</p>
+    <div class="q">«У тебя нет никакого взаимодействия с дизайнером рилсов. Зачем? Зачем это надо?»<cite>из записи экрана, Loom</cite></div>
+   </div>
+   <div class="media">
+    <div class="frame"><video src="v/reel10.mp4" poster="v/reel10.jpg" controls playsinline preload="none"></video></div>
+   </div>
+  </article>
+
+  <div class="mini">
+   <div>
+    <div class="num mono" style="color:var(--blue-deep)">кейс 1.5 · 11 сентября</div>
+    <h4>Три версии одного рилса для пробных публикаций</h4>
+    <p>Взял ролик, подождал 3 часа и замерил удержание. Отдал агенту, он сделал ещё 3 версии, я загрузил их в пробные. Итог: больше 5 тысяч просмотров, 28 подписок и больше 70 комментариев. Сейчас докручиваю, чтобы вся цепочка шла сама.</p>
+    <div class="src">мой Telegram-канал, 11.09.2026</div>
+   </div>
+   <div>
+    <div class="num mono" style="color:var(--blue-deep)">честно</div>
+    <h4>Кейсов с YouTube здесь нет</h4>
+    <p>Мои цифры — из Instagram, и рост там шёл на каруселях, а не на видео. Рилсы с собой я начал снимать только в сентябре. Моя часть в видео — чтобы ролики делались быстро и без лишних людей в цепочке.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 02 AUTOMATION -->
+<section class="sec sec-gray" id="auto">
+ <div class="wrap">
+  <div class="kick mono"><span class="star">✳︎</span> 02 · автоматизация</div>
+  <h2 class="h2">Где агент заменил <span class="u">подрядчиков</span></h2>
+  <p class="lead"><span class="dots">::</span>Воронки, боты, презентации, аналитика, работа с базой вопросов. Всё ниже снято с моего экрана.</p>
+
+  <article class="case">
+   <div>
+    <div class="num">кейс 2.1 · 30 июля</div>
+    <h3>Воронка, собранная голосом, продала на 165 000 ₽ одним чеком</h3>
+    <p>Воронку я собирал с агентом. В ней квалификация, разные сообщения под каждую кнопку и аналитика по Instagram и Telegram: охваты, где теряются люди, какое возражение закрыть постом. Прямо во время записи пришла оплата на 165 тысяч одним чеком, с холодного трафика.</p>
+    <div class="stats">
+     <div class="st"><b>155 тыс.</b><span>просмотров у поста, с которого люди заходили в воронку</span></div>
+     <div class="st"><b>880</b><span>комментариев под ним</span></div>
+    </div>
+    <div class="q">«Продать на 165 тысяч одним чеком на холодную — это, поверьте мне, квест»<cite>из записи экрана, Loom</cite></div>
+   </div>
+   <div class="media">
+    <div class="frame"><video src="v/c165k.mp4" poster="v/c165k.jpg" controls playsinline preload="none"></video></div>
+   </div>
+  </article>
+
+  <article class="case flip">
+   <div>
+    <div class="num">кейс 2.2 · 16 августа</div>
+    <h3>Боты, презентации и дизайн постов — 0 ₽ подрядчикам</h3>
+    <p>За разработку ботов я платил около 50 тысяч. Сейчас ноль. За дизайн презентаций и постов тоже больше не плачу. Слайды к уроку агент сделал из моих заметок за минуту: 14:32 отправил, 14:33 готово.</p>
+    <div class="stats">
+     <div class="st"><span class="was">~50 000 ₽ на ботов</span><b>0 ₽</b><span>воронку и ботов ведёт агент</span></div>
+     <div class="st"><b>1 мин</b><span>слайды к уроку из заметок</span></div>
+    </div>
+   </div>
+   <div class="media">
+    <div class="frame"><video src="v/bots0.mp4" poster="v/bots0.jpg" controls playsinline preload="none"></video></div>
+   </div>
+  </article>
+
+  <article class="case">
+   <div>
+    <div class="num">кейс 2.3 · 27 июля</div>
+    <h3>Агент-маркетолог разобрал воронку, за 4 часа я её доработал</h3>
+    <p>Агент забирает аналитику воронки, пишет отчёт со слабыми местами и готовыми текстами. По команде «внедряй» переписывает сообщения и добавляет квалификацию лидов. Такой отчёт, по-моему, можно продавать тысяч за тридцать.</p>
+    <div class="q">«Он переписывает все сообщения, делает их супер конкретными»<cite>из записи экрана, Loom</cite></div>
+   </div>
+   <div class="media">
+    <div class="frame"><video src="v/marketer.mp4" poster="v/marketer.jpg" controls playsinline preload="none"></video></div>
+   </div>
+  </article>
+
+  <div class="mini">
+   <div>
+    <div class="num mono" style="color:var(--blue-deep)">кейс 2.4 · 8 сентября</div>
+    <h4>33 урока курса в новой редакции — за полчаса</h4>
+    <p>Агент разобрал материалы курса на платформе и переписал уроки: объяснения, примеры, практика, проверка результата. 19 основных уроков, 11 по продажам и 3 бонусных.</p>
+    <div class="src">запись экрана, Loom</div>
+   </div>
+   <div>
+    <div class="num mono" style="color:var(--blue-deep)">кейс 2.5</div>
+    <h4>Ни один вопрос клиента не теряется</h4>
+    <p>Агент читает чаты группы и расшифровки созвонов. Если у человека проблема, он записывает её в Notion. Если я ответил в чате или видео в Loom, туда же уходит и решение.</p>
+    <div class="src">мой Telegram-канал, 30.06.2026</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 03 CAROUSELS -->
+<section class="sec" id="carousel">
+ <div class="wrap">
+  <div class="kick mono"><span class="star">✳︎</span> 03 · карусели</div>
+  <h2 class="h2">Карусель — это <span class="u">минуты</span>, а не вечер в конструкторе</h2>
+
+  <article class="case">
+   <div>
+    <div class="num">кейс 3.1 · 9 августа</div>
+    <h3>Карусель голосом за 3 минуты</h3>
+    <p>Говорю тему и референс дизайна. Агент пишет текст, сам делает скриншоты, вырезает фото и рендерит слайды. Правки тоже голосом: на пятом слайде нужен человек, восьмой сделай по-другому.</p>
+    <div class="q">«Мне не нужен дизайнер в данном случае. Мне не нужно руками ничего двигать»<cite>из записи экрана, Loom</cite></div>
+   </div>
+   <div class="media">
+    <div class="frame"><video src="v/carousel3.mp4" poster="v/carousel3.jpg" controls playsinline preload="none"></video></div>
+   </div>
+  </article>
+
+  <article class="case flip">
+   <div>
+    <div class="num">кейс 3.2 · 17 августа</div>
+    <h3>Своя дизайн-система за 10 минут, пост в ней — за 6</h3>
+    <p>Собираю референсы, из них получается дизайн-система. Отдаю её боту, он ставит её себе и дальше верстает карусели в ней. На записи: система примерно за 7–10 минут, пост в 17:45 → 17:51.</p>
+   </div>
+   <div class="media">
+    <div class="frame"><video src="v/ds.mp4" poster="v/ds.jpg" controls playsinline preload="none"></video></div>
+   </div>
+  </article>
+
+  <article class="case">
+   <div>
+    <div class="num">кейс 3.3 · 12 августа</div>
+    <h3>Второй пост под другой курс — 4 минуты</h3>
+    <p>Написал: нужен ещё один такой пост, посмотри всё, что знаешь про мои продукты. Агент сам изучил страницы курсов, написал текст и оффер, сверстал в моём дизайне.</p>
+    <div class="q">«В 18 часов я это послал, в 18:04 я получил полностью свёрстанный пост»<cite>из записи экрана, Loom</cite></div>
+   </div>
+   <div class="media">
+    <div class="frame"><video src="v/post4.mp4" poster="v/post4.jpg" controls playsinline preload="none"></video></div>
+   </div>
+  </article>
+
+  <div class="mini">
+   <div>
+    <div class="num mono" style="color:var(--blue-deep)">кейс 3.4 · быстро ≠ слабо</div>
+    <h4>Посты, собранные за минуты, которые разошлись</h4>
+    <div class="stats">
+     <div class="st"><b>49 268</b><span>просмотров и 1 400 сохранений. Первая версия дизайна за 13 минут</span></div>
+     <div class="st"><b>164 357</b><span>просмотров и 1 718 сохранений. Пост про Рейчел Каск, собран примерно за 10 минут</span></div>
+    </div>
+    <div class="src">статистика Instagram, 22.08 и 05.09.2026</div>
+   </div>
+   <div>
+    <div class="num mono" style="color:var(--blue-deep)">кейс 3.5 · участница группы</div>
+    <h4>4 минуты вместо 7 часов</h4>
+    <div class="q">«Ему всего 4 минуты понадобилось сверстать пост… год назад этот стиль я выверстывала 7 часов»<cite>Маша, группа «AI-маркетолог», 23.09.2026</cite></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 04 GROWTH -->
+<section class="sec sec-gray" id="growth">
+ <div class="wrap">
+  <div class="kick mono"><span class="star">✳︎</span> 04 · рост и доход в Instagram</div>
+  <h2 class="h2">Мой аккаунт и <span class="u">Маша</span></h2>
+
+  <article class="case">
+   <div>
+    <div class="num">кейс 4.1 · @andreyandreev.me</div>
+    <h3>+22 тысячи подписчиков с января — на каруселях</h3>
+    <p>С 1 января до конца июля я выпустил 444 поста, примерно два в день. Рилсы с собой до сентября не снимал: весь рост дали карусели.</p>
+    <div class="stats">
+     <div class="st wide"><span class="was">47 236 · 1 января</span><b>69 275</b><span>подписчиков на 17 сентября 2026</span></div>
+     <div class="st"><b>17,6 млн</b><span>просмотров за январь–июль</span></div>
+     <div class="st"><b>23 000</b><span>новых подписчиков за январь–июль</span></div>
+     <div class="st"><b>1,78 млн</b><span>просмотров у лучшего поста года</span></div>
+     <div class="st"><b>1 151</b><span>подписка с одного продающего поста, 26 июля</span></div>
+    </div>
+    <p>Деньги. В марте мини-продукт и воронка принесли 255 тысяч за месяц. Самый крупный чек с холодного трафика — 165 000 ₽, он в кейсе 2.1.</p>
+    <div class="src">Instagram API 05.08 и 17.09.2026 · мой Telegram-канал 18.08 · запись экрана, Loom</div>
+   </div>
+   <div class="media">
+    <div class="frame light"><img src="img/top_posts.jpg" alt="Топ постов аккаунта по просмотрам, 2026" loading="lazy" width="1400" height="788"></div>
+    <div class="cap">Лучшие посты года по просмотрам. Слайд с моего вебинара, данные Instagram на 5 августа.</div>
+   </div>
+  </article>
+
+  <article class="case flip">
+   <div>
+    <div class="num">кейс 4.2 · @masha_herd</div>
+    <h3>Маша Херд: пост на 1,37 млн просмотров и продажи книги</h3>
+    <p>Маша пишет про тело, эмоции и ритм женщины. Пришла в группу с контентом, который не давал отклика. Стала писать смелые посты вместо безопасных, и один из них собрал 1,37 млн просмотров, сотни комментариев и продажи её книги.</p>
+    <p>Сейчас Маша делает посты и рилсы со своим агентом. Рилс она собрала из своей двухчасовой лекции, в фирменных шрифтах и цветах.</p>
+    <div class="src">канал @mbga_materials, 25.07.2026 · запись экрана, Loom · чат группы, 25.09</div>
+   </div>
+   <div class="media">
+    <div class="frame light"><img src="img/c_herd.jpg" alt="Кейс Маши Херд из канала группы" loading="lazy"></div>
+   </div>
+  </article>
+ </div>
+</section>
+
+<!-- 05 MBGA -->
+<section class="sec" id="mbga">
+ <div class="wrap">
+  <div class="kick mono"><span class="star">✳︎</span> 05 · Make Blog Great Again</div>
+  <h2 class="h2">Что получилось у <span class="u">участниц</span> группы</h2>
+  <p class="lead"><span class="dots">::</span>Make Blog Great Again — моя закрытая группа по блогу. Цифры со скриншотов статистики и из сообщений, которые участницы присылали сами. Одинаковых цифр каждому я не обещаю, это примеры логики.</p>
+
+  <article class="case">
+   <div>
+    <div class="num">кейс 5.1 · 12 сентября</div>
+    <h3>Академия для психологов: 1,5 млн ₽ продаж за неделю</h3>
+    <p>Участница прошлого потока научилась делать карусели. Продажи шли на холодную аудиторию, чек 20 000 ₽. Ещё около 900 000 ₽ дали те, кто дозрел до офлайн-тренинга за 90 000 ₽.</p>
+    <div class="stats">
+     <div class="st"><b>252 458</b><span>просмотров у одной карусели</span></div>
+     <div class="st"><b>5 478</b><span>подписок с неё</span></div>
+    </div>
+    <div class="src">канал @mbga_materials/244 · скрин статистики и сообщение участницы</div>
+   </div>
+   <div class="media">
+    <div class="pair">
+     <div class="frame light"><img src="img/c_academy_insights.jpg" alt="Статистика карусели: 252 458 просмотров" loading="lazy"></div>
+     <div class="frame light"><img src="img/c_academy_chat.jpg" alt="Сообщение участницы: 1 500 000 за неделю" loading="lazy"></div>
+    </div>
+   </div>
+  </article>
+
+  <article class="case flip">
+   <div>
+    <div class="num">кейс 5.2 · 28 августа</div>
+    <h3>Наталья Мальцева: больше миллиона с одного поста</h3>
+    <p>Пост собрал 2 110 комментариев. На вебинар зарегистрировались 900 человек, в пике на эфире было 400. Больше 100 человек купили практикум за 10 000 ₽. В видео я разбираю этот пост по слайдам.</p>
+    <div class="src">канал @mbga_materials/169</div>
+   </div>
+   <div class="media">
+    <div class="frame"><video src="v/million.mp4" poster="v/million.jpg" controls playsinline preload="none"></video></div>
+   </div>
+  </article>
+
+  <article class="case">
+   <div>
+    <div class="num">кейс 5.3 · 25 июля</div>
+    <h3>Галина Фёдорова: 248 000 просмотров за неделю</h3>
+    <p>До программы, её словами, «блог вообще не двигался».</p>
+    <div class="stats">
+     <div class="st"><b>+1 000</b><span>подписчиков</span></div>
+     <div class="st"><b>70 000 ₽</b><span>прибыли</span></div>
+    </div>
+    <div class="src">канал @mbga_materials/15</div>
+   </div>
+   <div class="media">
+    <div class="frame light"><img src="img/c_fedorova.jpg" alt="Кейс Галины Фёдоровой" loading="lazy"></div>
+   </div>
+  </article>
+
+  <article class="case flip">
+   <div>
+    <div class="num">кейс 5.4 · 11 сентября</div>
+    <h3>После пяти лет паузы: «сегодня уже +74 подписчика»</h3>
+    <p>Участница вернулась в Instagram после пяти лет перерыва. Её старые 2000 подписчиков, как она пишет, «умерли в чертогах алгоритмов». Три недели она каждый день публиковала карусели, и пошло «хорошее начало»: рилс дал 36 подписок, а в день, когда она написала, прибавилось 74 подписчика.</p>
+    <div class="src">канал @mbga_materials/240 · сообщение участницы</div>
+   </div>
+   <div class="media">
+    <div class="frame light vert"><img src="img/c_restart.jpg" alt="Сообщение участницы и статистика" loading="lazy"></div>
+   </div>
+  </article>
+
+  <div class="mini">
+   <div>
+    <div class="num mono" style="color:var(--blue-deep)">кейс 5.5 · пятый поток</div>
+    <h4>Маркетолог: 5 постов за 7,5 месяцев → 14 публикаций за 23 дня</h4>
+    <p>До группы аккаунт почти стоял. После старта — 14 публикаций за 23 дня, а карусель по свежей новости она собрала с агентом за 1 час 10 минут.</p>
+   </div>
+   <div>
+    <div class="num mono" style="color:var(--blue-deep)">где смотреть</div>
+    <h4>Новые кейсы — в канале группы</h4>
+    <p>Участницы присылают результаты, я выкладываю их в канал со скринами.</p>
+    <div class="cta"><a class="pill pill-gray" href="https://t.me/mbga_materials">Канал @mbga_materials</a></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- FORMAT -->
+<section class="format" id="format">
+ <div class="wrap">
+  <div class="kick mono"><span class="star">✳︎</span> как со мной работать</div>
+  <h2 class="h2">Я не контент-завод. Я делаю так, чтобы <span class="u">было быстро и просто</span></h2>
+  <ol class="steps">
+   <li>Говорю, что снимать, и отдаю логику: о чём ролики и посты, как они связаны с продуктом.</li>
+   <li>Отдаю, как настроить процесс, чтобы монтаж и дизайн занимали минуты, а не дни.</li>
+   <li>С вашей стороны нужна команда, хотя бы монтажёр. Я консультирую и отдаю систему, руками за команду не делаю.</li>
+  </ol>
+  <div class="cta">
+   <a class="pill pill-coral" href="https://t.me/andrey_andreev">Написать в Telegram</a>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap"><img src="img/andrey.jpg" alt="" width="32" height="32"><span class="mono">Андрей Андреев · @andreyandreev.me · страница собрана 27.09.2026</span></div>
+</footer>
+
+<script>
+document.addEventListener('play',function(e){document.querySelectorAll('video').forEach(function(v){if(v!==e.target&&!v.muted)v.pause();});},true);
+</script>
+</body>
+</html>
